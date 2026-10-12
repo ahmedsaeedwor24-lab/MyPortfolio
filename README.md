@@ -238,3 +238,4 @@ For single-page routing support on Netlify, add a `public/_redirects` file with:
 
 ## 📄 License
 MIT © 2026 Ahmed Saeed. Built with care and precision.
+"# MyPortfolio" 
