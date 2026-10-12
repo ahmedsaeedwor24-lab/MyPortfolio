@@ -61,8 +61,8 @@ export default function Hero() {
           </motion.div>
 
           {/* Profile Photo Avatar */}
-          <motion.div variants={itemVariants} className="mb-6 relative">
-            <div className="relative mx-auto group">
+          <motion.div variants={itemVariants} className="mb-6 relative flex justify-center">
+            <div className="relative group w-36 h-36 sm:w-44 sm:h-44">
               {/* Soft ambient aura */}
               <div
                 className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-primary/30 to-accent/30 blur-md opacity-70 group-hover:opacity-100 transition-opacity"
@@ -70,12 +70,15 @@ export default function Hero() {
               />
               
               {/* Picture frame */}
-              <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-surface shadow-soft-lg ring-2 ring-primary/20 bg-surface">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-surface shadow-soft-lg ring-2 ring-primary/20 bg-surface">
                 <img
                   src={profileData.photo}
                   alt={profileData.name[language]}
                   className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                   loading="eager"
+                  onError={(e) => {
+                    e.currentTarget.src = './ahmed-saeed-portrait.jpg';
+                  }}
                 />
               </div>
 

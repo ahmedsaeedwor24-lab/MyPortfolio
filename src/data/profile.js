@@ -1,6 +1,9 @@
+import photoPortrait from '../assets/ahmed-saeed-portrait.jpg';
+import photoFull from '../assets/ahmed-saeed.jpg';
+
 export const profileData = {
-  photo: "/ahmed-saeed-portrait.jpg",
-  photoFull: "/ahmed-saeed.jpg",
+  photo: photoPortrait,
+  photoFull: photoFull,
   name: {
     en: "Ahmed Saeed",
     ar: "أحمد سعيد"

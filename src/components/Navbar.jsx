@@ -104,6 +104,9 @@ export default function Navbar() {
                 src={profileData.photo}
                 alt={profileData.name[language]}
                 className="w-full h-full object-cover object-center"
+                onError={(e) => {
+                  e.currentTarget.src = './ahmed-saeed-portrait.jpg';
+                }}
               />
             </div>
             <div className="flex flex-col">
